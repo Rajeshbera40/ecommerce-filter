@@ -8,7 +8,6 @@ const Navbar = () => {
             <div className="nav-wrapper">
                 <div className="logo">
                     <h2>E-COMMERCE</h2>
-                    <h2>Demo</h2>
                 </div>
                 <div className="search">
                     <input type="text" placeholder="Search.." />
