@@ -1,9 +1,30 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: sans-serif;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
 }
 
-:root{
-    --navbar_color:#2874f0;
+:root {
+  --navbar_color: #2874f0;
+  --home_background:#f0f0f0;
+}
+.home {
+  background-color: var(--home_background);
+  min-height: 100vh;
+  .home-wrapper {
+    display: flex;
+    // width: 100%;
+    // margin: 10px auto;
+    padding: 8px;
+    
+    gap: 10px;
+    .left {
+      flex: 1;
+      // background-color: red;
+    }
+    .right {
+      flex: 4;
+      // background-color: green;
+    }
+  }
 }

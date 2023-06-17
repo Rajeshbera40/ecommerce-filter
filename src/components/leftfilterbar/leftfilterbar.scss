@@ -1,0 +1,36 @@
+.leftfilterbar {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  .title {
+    border-bottom: 1px solid var(--home_background);
+    padding: 8px;
+  }
+  .filter {
+    .title_name {
+      font-size: 12px;
+      padding: 5px 0px;
+      margin-bottom: 5px;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        padding: 5px 0px;
+      }
+    }
+    .categories {
+      padding: 10px;
+      border-bottom: 1px solid var(--home_background);
+    }
+    .brand {
+      padding: 10px;
+
+      .b_name{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
