@@ -1,64 +1,64 @@
 .leftfilterbar {
-  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06);
-  background-color: #fff;
-  .title {
-    border-bottom: 1px solid var(--home_background);
-    padding: 8px;
-  }
-  .filter {
-    .title_name {
-      font-size: 12px;
-      padding: 5px 0px;
-      margin-bottom: 5px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    width: 100%;
+    .title {
+        border-bottom: 1px solid var(--home_background);
+        padding: 8px;
     }
-    ul {
-      list-style-type: none;
-      li {
-        padding: 5px 0px;
-      }
-    }
-    .categories {
-      padding: 10px;
-      border-bottom: 1px solid var(--home_background);
-    }
-    .brand {
-      padding: 10px;
-      .b-search {
-        margin-bottom: 10px;
-        // border-bottom: 2px solid var(--home_background);
-        overflow: hidden;
-        // display: flex;
-        // align-items: center;
-        color: lightgray;
-        position: relative;
-        .b_s-icon{
-            position: absolute;
+    .filter {
+        .title_name {
+            font-size: 12px;
+            padding: 5px 0px;
+            margin-bottom: 5px;
         }
-        input {
-            border: none;
-            width: 100%;
-            outline: none;
-            padding: 2px 0px;
-            font-size: 15px;
-            padding-left: 24px;
-            border-bottom: 2px solid #e0e0e0;
-          &:focus {
-            border-bottom: 2px solid var(--navbar_color);
-          }
-          &::placeholder{
-            color: #878787;
-          }
+        ul {
+            list-style-type: none;
+            li {
+                padding: 5px 0px;
+            }
         }
-       
-      }
-      .b_name {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
-        font-size: 14px;
-        cursor: pointer;
-      }
+        .categories {
+            padding: 10px;
+            border-bottom: 1px solid var(--home_background);
+        }
+        .brand {
+            padding: 10px;
+            .b-search {
+                margin-bottom: 10px;
+                // border-bottom: 2px solid var(--home_background);
+                overflow: hidden;
+                // display: flex;
+                // align-items: center;
+                color: lightgray;
+                position: relative;
+                .b_s-icon {
+                    position: absolute;
+                }
+                input {
+                    border: none;
+                    width: 100%;
+                    outline: none;
+                    padding: 2px 0px;
+                    font-size: 15px;
+                    padding-left: 24px;
+                    border-bottom: 2px solid #e0e0e0;
+                    &:focus {
+                        border-bottom: 2px solid var(--navbar_color);
+                    }
+                    &::placeholder {
+                        color: #878787;
+                    }
+                }
+            }
+            .b_name {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
     }
-  }
 }
