@@ -23,13 +23,41 @@
     }
     .brand {
       padding: 10px;
-
-      .b_name{
+      .b-search {
+        margin-bottom: 10px;
+        // border-bottom: 2px solid var(--home_background);
+        overflow: hidden;
+        // display: flex;
+        // align-items: center;
+        color: lightgray;
+        position: relative;
+        .b_s-icon{
+            position: absolute;
+        }
+        input {
+            border: none;
+            width: 100%;
+            outline: none;
+            padding: 2px 0px;
+            font-size: 15px;
+            padding-left: 24px;
+            border-bottom: 2px solid #e0e0e0;
+          &:focus {
+            border-bottom: 2px solid var(--navbar_color);
+          }
+          &::placeholder{
+            color: #878787;
+          }
+        }
+       
+      }
+      .b_name {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 10px;
         font-size: 14px;
+        cursor: pointer;
       }
     }
   }

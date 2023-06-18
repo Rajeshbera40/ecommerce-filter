@@ -1,5 +1,6 @@
 import React from "react";
 import "./leftfilterbar.scss";
+import { Icon } from "@iconify/react";
 const Leftfilterbar = () => {
   return (
     <div className="leftfilterbar">
@@ -18,22 +19,26 @@ const Leftfilterbar = () => {
         <div className="brand">
           <h4 className="title_name">BRAND</h4>
           <div className="b-search">
+            <Icon icon="ion:search" className="b_s-icon" width="20" height="20" />
+            <input type="text" placeholder="Search Brand.." />
+          </div>
+
+
+          <div className="b_name">
+            <input type="checkbox" id="asus" />
+            <label htmlFor="asus">Asus</label>
           </div>
           <div className="b_name">
             <input type="checkbox" />
-            <span>Asus</span>
+            <label>Mi</label>
           </div>
           <div className="b_name">
             <input type="checkbox" />
-            <span>Mi</span>
+            <label>Sumsung</label>
           </div>
           <div className="b_name">
             <input type="checkbox" />
-            <span>Sumsung</span>
-          </div>
-          <div className="b_name">
-            <input type="checkbox" />
-            <span>OPPO</span>
+            <label>OPPO</label>
           </div>
         </div>
       </div>
