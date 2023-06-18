@@ -24,7 +24,12 @@ const Navbar = () => {
                     <span>Cart</span>
                     <div className="batch">1</div>
                 </div>
-                <div className="login">Login</div>
+                <div className="login">
+                    <button>
+                        <Icon icon="bi:person-square" width="20" height="20" />
+                        <span>Login / Register</span>
+                    </button>
+                </div>
             </div>
         </div>
     );

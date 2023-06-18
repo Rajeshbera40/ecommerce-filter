@@ -69,5 +69,20 @@
                 left: 15px;
             }
         }
+        .login {
+            button {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                cursor: pointer;
+                border: none;
+                padding: 8px;
+                border-radius: 5px;
+                background-color: #fff;
+                color: var(--navbar_color);
+                font-size: 16px;
+                transition: all 0.3s ease;
+            }
+        }
     }
 }
