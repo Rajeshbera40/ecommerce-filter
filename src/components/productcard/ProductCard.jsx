@@ -16,9 +16,12 @@ const ProductCard = () => {
                             realme C33 2023 (Aqua Blue, 128 GB)
                         </h4>
                         <div className="p_rating">
-                            <span>4.4</span>
-                            <span>13,111 Ratings </span>
-                            <span> 406 Reviews</span>
+                            <span className="num_rating">4.4 &#9733;</span>
+                            <span className="user_rating">
+                                13,111 Ratings &nbsp;&
+                            </span>
+
+                            <span className="reviews">&nbsp; 406 Reviews</span>
                         </div>
 
                         <div className="p_details">
@@ -39,7 +42,7 @@ const ProductCard = () => {
                         </div>
                     </div>
                     <div className="desc_price">
-                        <h3 className="P_price">₹10,499</h3>
+                        <span className="p_price">₹10,499</span>
                         <div className="p_off">
                             <span>₹13,999</span>
                             <span>25% off</span>
