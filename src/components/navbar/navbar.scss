@@ -6,6 +6,9 @@
     display: flex;
     justify-content: center;
     color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     .nav-wrapper {
         width: 80%;
         max-width: 1248px;
