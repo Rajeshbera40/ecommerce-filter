@@ -1,7 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: sans-serif;
+    // font-family: "Nunito", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 :root {
@@ -27,8 +28,8 @@
             // padding: 0px 10px 0px 0px;
         }
         .right {
-            flex: 4;  
-            
+            flex: 4;
+
             background-color: green;
         }
     }
