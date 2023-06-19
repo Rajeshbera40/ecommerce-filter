@@ -1,0 +1,40 @@
+.productcard {
+    background-color: #fff;
+    width: 100%;
+    .card {
+        padding: 24px 0 30px 24px;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        gap: 20px;
+        .product_image {
+            width: 200px;
+            height: 200px;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .product_desc {
+            display: flex;
+            width: 100%;
+            .desc_about {
+                flex: 2;
+                .title {
+                    font-size: 18px;
+                    margin-bottom: 4px;
+                }
+                .p_rating {
+                }
+                .p_details {
+                    margin-top: 10px;
+                    ul {
+                        list-style: none;
+                    }
+                }
+            }
+            .desc_price {
+                flex: 1;
+            }
+        }
+    }
+}
