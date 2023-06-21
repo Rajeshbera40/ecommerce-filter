@@ -44,17 +44,18 @@ const ProductCard = () => {
                     <div className="desc_price">
                         <span className="p_price">₹10,499</span>
                         <div className="p_off">
-                            <span>₹13,999</span>
-                            <span>25% off</span>
+                            <span className="p_rate">₹13,999</span>
+                            <span className="p_discount">25% off</span>
                         </div>
                         <div className="dlivery">
-                            <span>Free delivery by</span>
-                            <span>Today</span>
+                            <span>
+                                Free delivery by <strong>Today</strong>
+                            </span>
                         </div>
                         <div className="deal">Back to Campus Deal</div>
                         <div className="exchange">
                             <span>Upto </span>
-                            <span>₹9,400</span>
+                            <span className="exchange_value">₹9,400</span>
                             <span> Off on Exchange</span>
                         </div>
                     </div>

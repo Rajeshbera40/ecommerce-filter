@@ -47,18 +47,32 @@
                     }
                 }
                 .p_details {
-                    margin-top: 15px;
+                    margin-top: 20px;
                     ul {
                         list-style: none;
                         padding: 0;
                         margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        font-size: 13px;
+                        li {
+                            display: flex;
+                            align-items: center;
+                            &::before {
+                                content: "•";
+                                color: rgb(194, 194, 194);
+                                padding-right: 8px;
+                                display: table-cell;
+                            }
+                        }
                     }
                 }
             }
             .desc_price {
                 display: flex;
                 flex-direction: column;
-                gap: 3px;
+                gap: 5px;
                 flex: 1;
                 .p_price {
                     font-size: 23px;
@@ -70,6 +84,32 @@
                     font-size: 15px;
                     font-weight: 500;
                     color: #878787;
+                    .p_rate {
+                        text-decoration: line-through;
+                    }
+                    .p_discount {
+                        color: #388e3c;
+                    }
+                }
+                .dlivery {
+                    span {
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                    }
+                }
+                .deal {
+                    color: rgb(112, 72, 198);
+                    background-color: rgb(233, 222, 255);
+                    font-size: 12px;
+                    padding: 4px;
+                    width: max-content;
+                }
+                .exchange {
+                    font-size: 12px;
+                    .exchange_value {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
                 }
             }
         }

@@ -12,6 +12,7 @@ const Home = () => {
                 </div>
                 <div className="right">
                     <ProductCard />
+                    <ProductCard />
                 </div>
             </div>
         </div>
