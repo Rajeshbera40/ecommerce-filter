@@ -1,10 +1,11 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "Merriweather", serif;
 }
 
 :root {
+    --main_color: #2874f0;
     --navbar_color: #2874f0;
     --home_background: #f0f0f0;
 }
@@ -27,9 +28,7 @@
             // padding: 0px 10px 0px 0px;
         }
         .right {
-            flex: 4;  
-            
-            background-color: green;
+            flex: 4;
         }
     }
 }
