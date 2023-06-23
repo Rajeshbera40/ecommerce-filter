@@ -5,7 +5,7 @@ import ProductCard from "../components/productcard/ProductCard";
 import Data from "../data.json";
 
 const Home = () => {
-    console.log(Data);
+    // console.log(Data);
     return (
         <div className="home">
             <Navbar />

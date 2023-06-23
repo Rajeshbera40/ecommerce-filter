@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./productcard.scss";
+import ReactPaginate from "react-paginate";
+
 const ProductCard = ({ Data }) => {
+    const [itemsPerPage, setItemPerPage] = useState(4);
+    const [itemOffset, setItemOffset] = useState(0);
+
+    const endOffset = itemOffset + itemsPerPage;
+    const newData = Data.slice(itemOffset, endOffset);
+    const pageCount = Math.ceil(Data.length / itemsPerPage);
+
+    const handlePageClick = (event) => {
+        const newOffset = (event.selected * itemsPerPage) % Data.length;
+
+        setItemOffset(newOffset);
+    };
     return (
         <div className="productcard">
-            {Data &&
-                Data.map((data, i) => (
+            {newData &&
+                newData.map((data, i) => (
                     <div className="card" key={i}>
                         <div className="product_image">
                             {data.src && <img src={data.src} alt="" />}
@@ -86,6 +100,28 @@ const ProductCard = ({ Data }) => {
                         </div>
                     </div>
                 ))}
+            <div className="c_pagination">
+                <ReactPaginate
+                    breakLabel="..."
+                    nextLabel="&raquo;"
+                    onPageChange={handlePageClick}
+                    pageRangeDisplayed={itemsPerPage}
+                    pageCount={pageCount}
+                    previousLabel="&laquo;"
+                    renderOnZeroPageCount={null}
+                    className="pagination"
+                    pageClassName="page-item"
+                    pageLinkClassName="page-link"
+                    previousClassName="page-item"
+                    previousLinkClassName="page-link"
+                    nextClassName="page-item"
+                    nextLinkClassName="page-link"
+                    activeClassName="page-item"
+                    activeLinkClassName="active"
+                    breakClassName="page-item"
+                    breakLinkClassName="page-link"
+                />
+            </div>
         </div>
     );
 };
